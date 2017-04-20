@@ -123,7 +123,8 @@ root@adk:/home/adk#
 ```sh
 root@adk:/home/adk# kubectl expose deployment nginx --type=NodePort
 ```
-Chúng ta phải sử dụng `--type=NodePort` vì minikube không hỗ trợ dịch vụ `LoadBalancer`.
+
+Options NodePorts sẽ `listen` port trên chính node này.
 
 ```sh
 root@adk:/home/adk# kubectl get svc
