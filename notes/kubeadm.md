@@ -319,6 +319,18 @@ kubectl create clusterrolebinding add-on-cluster-admin --clusterrole=cluster-adm
 
 ref: https://github.com/kubernetes/dashboard/issues/1800
 
+- Xóa 1 node khỏi cluster
+```sh
+root@master:~# kubectl delete nodes minion1
+node "minion1" deleted
+root@master:~# 
+```
+
+Trên nodes minion1, chạy lệnh sau:
+```sh
+root@minion1:~# kubeadm reset
+```
+
 # 6. Tài liệu tham khảo:
 - https://kubernetes.io/docs/getting-started-guides/kubeadm/
 - https://kubernetes.io/docs/concepts/cluster-administration/addons/

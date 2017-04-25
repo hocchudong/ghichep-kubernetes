@@ -56,6 +56,11 @@ Khi 1 PV thoả mãn yêu cầu của 1 PVC thì chúng "match" nhau, rồi "bou
 - ConfigMap là giải pháp để nhét 1 file config / đặt các ENVironment var hay set các argument khi gọi câu lệnh. ConfigMap là một cục config, mà pod nào cần, thì chỉ định là nó cần - giúp dễ dàng chia sẻ file cấu hình.
 - secret dùng để lưu trữ các mật khẩu, token, ... hay những gì cần giữ bí mật. Nó nằm bên trong container.
 
+## 1.7 Labels - Annotations
+- Labels: Là các cặp  **key-value** được Kubernetes đính kèm vào pods, replication controllers,...
+- Annotations: You can use Kubernetes annotations to attach arbitrary non-identifying metadata to objects. Clients such as tools and libraries can retrieve this metadata.
+- Labels can be used to select objects and to find collections of objects that satisfy certain conditions. In contrast, annotations are not used to identify and select objects. 
+
 # 2. Thành phần
 
 ![](https://s3-us-west-2.amazonaws.com/x-team-ghost-images/2016/06/o7leok.png)
