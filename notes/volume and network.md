@@ -1,4 +1,4 @@
-#1. Volume
+# 1. Volume
 
 ## 1.1 Các loại volume trong kubernetes:
 - emptyDir
