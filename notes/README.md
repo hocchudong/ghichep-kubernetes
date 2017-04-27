@@ -22,8 +22,15 @@ https://github.com/linhlt247/ghichep-kubernetes/blob/master/notes/kubectl-comman
 
 # 4. Volume and Network.
 
-
+https://github.com/linhlt247/ghichep-kubernetes/blob/master/notes/volume%20and%20network.md
 
 # 5. Write config yaml file.
 
 https://github.com/linhlt247/ghichep-kubernetes/blob/master/notes/config_file.md
+
+# 6. Ví dụ về tạo web server:
+- Viết file config để khởi chạy web server.
+- Thử nghiệm các tính năng:
+  - scale, load balacing.
+  - Update images cho deployments.
+  - roll back.
