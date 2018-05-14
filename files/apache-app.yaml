@@ -1,0 +1,27 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: apache2
+spec:
+  template:
+    metadata:
+      labels:
+        name: apache2
+    spec:
+      containers:
+      - name: apache2
+        image: httpd
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache2
+spec:
+  selector:
+    name: apache2
+  ports:
+    - port: 5555
+      targetPort: 80
+  type: NodePort
