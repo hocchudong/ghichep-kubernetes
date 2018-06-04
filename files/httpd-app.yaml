@@ -1,16 +1,15 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: apache2
+  name: httpd
 spec:
-  replicas: 3
   template:
     metadata:
       labels:
-        name: apache2
+        name: httpd
     spec:
       containers:
-      - name: apache2
+      - name: httpd
         image: httpd:2.2.31
         ports:
         - containerPort: 80
@@ -18,11 +17,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: apache2
+  name: httpd
 spec:
   selector:
-    name: apache2
+    name: httpd
   ports:
-    - port: 5555
+    - port: 5566
       targetPort: 80
   type: NodePort
