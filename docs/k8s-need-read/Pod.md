@@ -1,3 +1,7 @@
+## Tham khảo
+
+- [https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/](https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/)
+
 ## Pod trong k8s
 
 Container thường hướng tới việc giải quyết một vấn đề đơn lẻ, được xác định trong phạm vi hẹp, như là một microservice. 
@@ -311,7 +315,3 @@ Chúng có thể chia sẻ file volume, chúng có thể giao tiếp thông qua 
 
 Tất nhiên, đó mới chỉ là sự khởi đầu. Bạn thích thú với việc xem có thể làm gì khác và thực hành nhiều hơn với k8s? Hãy tiếp tục tham khảo các bài viết 
 trong chủ đề này.
- 
-## Tham khảo
-
-- [https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/](https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/)
