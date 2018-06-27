@@ -1,0 +1,27 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: httpd
+spec:
+  template:
+    metadata:
+      labels:
+        name: httpd
+    spec:
+      containers:
+      - name: httpd
+        image: httpd:2.2.31
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd
+spec:
+  selector:
+    name: httpd
+  ports:
+    - port: 5566
+      targetPort: 80
+  type: NodePort
