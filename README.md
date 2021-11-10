@@ -1,5 +1,5 @@
 # kubernetes
-Những ghi chép trong quá trình nghiên cứu về Kubernetes (K8s)
+Những ghi chép trong quá trình tìm hiểu về Kubernetes (K8s)
 
 ## MỤC LỤC
 
