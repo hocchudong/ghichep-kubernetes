@@ -1,0 +1,1 @@
+# Ghi chép về core K8S
